@@ -1,8 +1,16 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "api",
+  "name": "varto-api",
   "main": "src/index.ts",
-  "compatibility_date": "2026-09-29"
+  "compatibility_date": "2026-09-29",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "varto-db",
+      "database_id": "2769969f-8490-4ad5-bc69-337082814229",
+      "migrations_dir": "drizzle",
+    },
+  ],
   // "compatibility_flags": [
   //   "nodejs_compat"
   // ],
